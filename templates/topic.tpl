@@ -16,24 +16,6 @@
 						<div class="topic-body">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="topic-profile-pic hidden-xs text-center">
-										<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
-											<!-- IF posts.user.picture -->
-											<img itemprop="image" component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" class="img-thumbnail" />
-											<!-- ELSE -->
-											<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
-											<!-- ENDIF posts.user.picture -->
-										</a>
-										<small class="username" title="{posts.user.username}"><a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">{posts.user.username}</a></small>
-
-										<!-- IF posts.user.banned -->
-										<div class="text-center">
-											<span class="label label-danger">[[user:banned]]</span>
-										</div>
-										<!-- ENDIF posts.user.banned -->
-
-										<!-- IMPORT partials/topic/badge.tpl -->
-									</div>
 									<div class="topic-text">
 										<!-- IF @first -->
 										<h1 class="topic-title">

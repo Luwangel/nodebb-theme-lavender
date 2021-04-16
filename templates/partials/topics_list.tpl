@@ -14,19 +14,6 @@
 							<i class="fa fa-fw fa-square-o pull-left select pointer" component="topic/select"></i>
 							<!-- ENDIF showSelect -->
 
-							<div class="category-profile-pic">
-								<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->">
-									<!-- IF topics.thumb -->
-									<img src="{topics.thumb}" class="user-img" title="{topics.user.username}" />
-									<!-- ELSE -->
-									<!-- IF topics.user.picture -->
-									<img component="user/picture" data-uid="{topics.user.uid}" src="{topics.user.picture}" class="user-img" title="{topics.user.username}" />
-									<!-- ELSE -->
-									<div class="user-icon" style="background-color: {topics.user.icon:bgColor};" title="{topics.user.username}">{topics.user.icon:text}</div>
-									<!-- ENDIF topics.user.picture -->
-									<!-- ENDIF topics.thumb -->
-								</a>
-							</div>
 							<div class="category-text">
 								<p><strong><i component="topic/pinned" class="fa fa-thumb-tack<!-- IF !topics.pinned --> hide<!-- ENDIF !topics.pinned -->"></i> <i component="topic/locked" class="fa fa-lock<!-- IF !topics.locked --> hide<!-- ENDIF !topics.locked -->"></i></strong>
 									<!-- IF !topics.noAnchor -->
@@ -69,17 +56,9 @@
 							<!-- IF topics.unreplied -->
 							<p class="no-replies"><a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a></p>
 							<!-- ELSE -->
-							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
-								<!-- IF topics.teaser.user.picture -->
-								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
-								<!-- ELSE -->
-								<div class="teaser-pic user-icon" style="background-color: {topics.teaser.user.icon:bgColor};" title="{topics.teaser.user.username}">{topics.teaser.user.icon:text}</div>
-								<!-- ENDIF topics.teaser.user.picture -->
-							</a>
 							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 								<span class="timeago" title="{topics.teaser.timestampISO}"></span>
 							</a>
-
 							<!-- ENDIF topics.unreplied -->
 						</div>
 					</div>
