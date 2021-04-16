@@ -2,7 +2,7 @@
   "id": "nodebb-theme-lavender-anonymous",
   "name": "Lavender Anonymous",
   "description": "A theme that utilizes a masonry (magazine-like) homepage.",
-  "url": "https://github.com/NodeBB/nodebb-theme-lavender",
+  "url": "https://github.com/Luwangel/nodebb-theme-lavender",
   "screenshot": "screenshot.png",
   "baseTheme": "nodebb-theme-vanilla"
 }
