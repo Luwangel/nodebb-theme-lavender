@@ -59,9 +59,7 @@
 											</span>
 										</span>
 
-
-										<span component="post/editor" class="<!-- IF !posts.editor.username --> hidden<!-- ENDIF !posts.editor.username -->">, [[global:last_edited_by, {posts.editor.username}]] <span class="timeago" title="{posts.editedISO}"></span></span>
-
+										<span component="post/editor" class="<!-- IF !posts.editor.username --> hidden<!-- ENDIF !posts.editor.username -->">, [[global:edited]] <span class="timeago" title="{posts.editedISO}"></span></span>
 									</small>
 
 									<div class="dropdown moderator-tools" component="post/tools">
