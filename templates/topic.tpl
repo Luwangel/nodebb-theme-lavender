@@ -54,15 +54,8 @@
 								<div class="">
 									<small class="pull-right">
 										<span>
-											<!-- IF posts.user.userslug -->
-											<i component="user/status" class="fa fa-circle status {posts.user.status}" title='[[global:{posts.user.status}]]'></i>
-											<!-- ENDIF posts.user.userslug -->
-											<span data-username="{posts.user.username}" data-uid="{posts.user.uid}">
-												<!-- IF posts.user.uid -->
-												<strong><a href="{config.relative_path}/user/{posts.user.userslug}" itemprop="author">{posts.user.username}</a></strong> | <span class="timeago" title="{posts.timestampISO}"></span>
-												<!-- ELSE -->
+											<span>
 												[[global:guest]] | <span class="timeago" title="{posts.timestampISO}"></span>
-												<!-- ENDIF posts.user.uid -->
 											</span>
 										</span>
 
@@ -136,4 +129,3 @@
 	<!-- IMPORT partials/paginator.tpl -->
 </noscript>
 <!-- ENDIF !config.usePagination -->
-
