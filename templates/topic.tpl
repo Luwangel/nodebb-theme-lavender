@@ -16,6 +16,13 @@
 						<div class="topic-body">
 							<div class="row">
 								<div class="col-md-12">
+                                    <div class="topic-profile-pic hidden-xs text-center">
+											<!-- IF posts.secretAuthorName -->
+											<div class="user-icon">{posts.secretAuthorName:text}</div>
+											<!-- ENDIF posts.secretAuthorName -->
+
+										<!-- IMPORT partials/topic/badge.tpl -->
+									</div>
 									<div class="topic-text">
 										<!-- IF @first -->
 										<h1 class="topic-title">
@@ -37,7 +44,7 @@
 									<small class="pull-right">
 										<span>
 											<span>
-												[[global:guest]] | <span class="timeago" title="{posts.timestampISO}"></span>
+												<span class="timeago" title="{posts.timestampISO}"></span>
 											</span>
 										</span>
 
