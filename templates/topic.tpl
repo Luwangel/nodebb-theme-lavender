@@ -17,9 +17,13 @@
 							<div class="row">
 								<div class="col-md-12">
                                     <div class="topic-profile-pic hidden-xs text-center">
-											<!-- IF posts.secretAuthorName -->
-											<div class="user-icon">{posts.secretAuthorName:text}</div>
-											<!-- ENDIF posts.secretAuthorName -->
+                                        <!-- IF posts.selfPost -->
+                                        <div class="user-icon" style="background-color: {posts.user.icon:bgColor};">ME</div>
+                                        <!-- ELSE -->
+                                            <!-- IF posts.secretAuthorName -->
+                                            <div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.secretAuthorName}</div>
+                                            <!-- ENDIF posts.secretAuthorName -->
+                                        <!-- ENDIF posts.selfPost -->
 
 										<!-- IMPORT partials/topic/badge.tpl -->
 									</div>
