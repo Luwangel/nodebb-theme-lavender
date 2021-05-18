@@ -21,7 +21,7 @@
                                         <div class="user-icon" style="background-color: {posts.user.icon:bgColor};">ME</div>
                                         <!-- ELSE -->
                                             <!-- IF posts.secretAuthorName -->
-                                            <div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.secretAuthorName}</div>
+                                            <div class="user-icon" style="background-color: {posts.user.icon:bgColor}; font-size:'xx-large'">{posts.secretAuthorName}</div>
                                             <!-- ENDIF posts.secretAuthorName -->
                                         <!-- ENDIF posts.selfPost -->
 
